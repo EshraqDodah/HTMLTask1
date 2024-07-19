@@ -16,7 +16,7 @@
         <nav>
            
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./shop.html">Shop</a></li>
                 <li><a href="#about">About</a></li>
                 <li> <a href="./contact.html">Contact</a></li>
@@ -29,7 +29,7 @@
     <main>
         <H1>Products</H1>
 
-            <table>
+            <table id="table">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -85,20 +85,18 @@
             </table>
             <div class="main">
                 <h2 text-align="center">Add Product</h2>
-                <form>
-                  <input  type="text"  placeholder="Product ID">
-                  <input  type="text" placeholder="Product Name">
-                  <input type="number" placeholder="Product Price">
-                  <input type="number" placeholder="Quantity">
-                  <input type="submit" class="submit">
-                        
-                            
+                <form id="form">
+                  <!-- <input  type="text"  placeholder="Product ID" id="proId"> -->
+                  <input  type="text" placeholder="Product Name" id="name">
+                  <input type="number" placeholder="Product Price" id="price" >
+                  <input type="number" placeholder="Quantity" id="quantity">
+                  <input type="submit" class="submit" value="Add">       
                 </div>
 
     </main>    
     <footer>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="./index.html">Home</a>
             <span>|</span>
             <a href="./shop.html">Shop</a>
             <span>|</span>
@@ -107,5 +105,6 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
